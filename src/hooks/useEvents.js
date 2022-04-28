@@ -3,7 +3,7 @@ const useEvents = () =>{
     const [events, setEvents] = useState([]);
 
     useEffect( () =>{
-        fetch('http://localhost:5000/addevents')
+        fetch('https://sleepy-eyrie-79904.herokuapp.com/addevents')
         .then(res => res.json())
         .then(data => setEvents(data))
     }, [])

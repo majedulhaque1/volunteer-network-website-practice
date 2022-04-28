@@ -12,7 +12,7 @@ const AddEvents = () => {
 
         const event = {name, description, img};
 
-        fetch('http://localhost:5000/addevents',{
+        fetch('https://sleepy-eyrie-79904.herokuapp.com/addevents',{
             method:'POST',
             headers:{
                 'content-type': 'application/json'

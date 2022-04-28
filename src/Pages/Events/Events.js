@@ -4,7 +4,7 @@ import useEvents from '../../hooks/useEvents';
 const Events = () => {
     const [events, setEvents] = useEvents();
     const handleDelete = (id) =>{
-        const url = `http://localhost:5000/addevents/${id}`;
+        const url = `https://sleepy-eyrie-79904.herokuapp.com/addevents/${id}`;
         fetch(url, {
             method: 'DELETE'
         })
